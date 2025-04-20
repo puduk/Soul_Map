@@ -1,1 +1,6 @@
-* text=auto
+* text=auto eol=lf
+
+*.cpp linguist-language=C++
+*.hpp linguist-language=C++
+
+*.sh text eol=lf
