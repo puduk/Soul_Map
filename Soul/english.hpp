@@ -3,6 +3,6 @@
 #include "brain_data.hpp"
 #include "soul_data.hpp"
 
-void english(BrainData& b , SoulData& s);
+void english(BrainData& b );
 
 #endif

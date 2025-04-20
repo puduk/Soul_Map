@@ -6,7 +6,7 @@
 
 
 
-void english(BrainData& b , SoulData& s) {
+void english(BrainData& b ) {
 
 
   for (int i = 0; i < b.capacity; i++) {
@@ -35,22 +35,22 @@ void english(BrainData& b , SoulData& s) {
   if (b.english_score < 3) {
     std::cout << background_main << purple << cool << "Your English score is quite low. Keep practicing!" << std::endl;
     std::cout << background_main << purple << cool << "Watch shows with subtitles and read simple texts!" << std::endl;
-    return menu(s,b);
+
   }
   else if (b.english_score < 6) {
     std::cout << background_main << purple << cool << "Not bad! You have some basic knowledge." << std::endl;
     std::cout << background_main << purple << cool << "You're on your way to becoming fluent!" << std::endl;
-    return menu(s,b);
+
   }
   else if (b.english_score < 9) {
     std::cout << background_main << purple << cool << "Well done! Your English skills are impressive!" << std::endl;
     std::cout << background_main << purple << cool << "Keep speaking, reading, and expanding your vocabulary!" << std::endl;
-    return menu(s,b);
+
   }
   else {
     std::cout << bold << background_main << purple << cool << "PERFECT! You're a true English master!" << std::endl;
     std::cout << background_main << purple << cool << "Grammar, vocab, and fluency — you've got it all! 💂‍♂️" << std::endl;
-    return menu(s,b);
+
   }
 
 
