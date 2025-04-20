@@ -3,7 +3,7 @@
 #include "brain_data.hpp"
 #include "soul_data.hpp"
 
-void general(BrainData& b , SoulData& s);
+void general(BrainData& b );
 
 
 #endif
