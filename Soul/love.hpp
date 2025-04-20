@@ -3,6 +3,6 @@
 #include "soul_data.hpp"
 #include "brain_data.hpp"
 
-void love(SoulData& s , BrainData& b);
+void love(SoulData& s );
 
 #endif
