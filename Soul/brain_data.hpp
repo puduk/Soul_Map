@@ -7,7 +7,7 @@ class BrainData{
 
   public:
 
-    const static int capacity = 10;
+    constexpr static int capacity = 10;
 
     static std::string iq_questions[capacity];
     char user_iq_answer ;
