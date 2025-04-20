@@ -3,6 +3,6 @@
 #include "soul_data.hpp"
 #include "brain_data.hpp"
 
-void mood_color(SoulData& s , BrainData& b) ;
+void mood_color(SoulData& s ) ;
 
 #endif
