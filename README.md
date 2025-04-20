@@ -15,11 +15,13 @@ Designed with OOP principles, dynamic scoring logic, and a colorful CLI interfac
 
 ---
 
-✅ **Beautiful CLI Design with Colors & Icons**  
-🎨 Terminal colors for categories  
-💬 Custom result messages with emojis  
-🔁 Animated countdown before tests
-🔁 Animated opening countdown 
+✅ **Immersive Terminal Experience**  
+🎨 Terminal colors highlight sections and questions  
+💬 Custom result messages with emojis based on scores  
+⏳ Animated countdown before every test  
+📟 Animated "Calculating your data..." effect after answering  
+🚀 Opening intro countdown for dramatic CLI entrance  
+
 
 ---
 
