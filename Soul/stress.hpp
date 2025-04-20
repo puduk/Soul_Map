@@ -3,6 +3,6 @@
 #include "soul_data.hpp"
 #include "brain_data.hpp"
 
-void stress(SoulData &s , BrainData &b)  ;
+void stress(SoulData &s )  ;
 
 #endif

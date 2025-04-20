@@ -4,7 +4,7 @@
 #include "menu.hpp"
 
 
-void stress(SoulData &s , BrainData &b) {
+void stress(SoulData &s ) {
 
     std::cout << background_main << purple << "You need to rate to the important level for you (1-5)" << std::endl;
     answer_printer();
@@ -32,26 +32,26 @@ void stress(SoulData &s , BrainData &b) {
 
     if (s.stress_score <= 10) {
         std::cout << background_main << purple << cool << "You're extremely relaxed. You radiate calm energy. 🧘‍♂️🌿" << std::endl;
-        return menu(s ,b);
+
     }
     else if (s.stress_score <= 20) {
         std::cout << background_main << purple << cool << "You're doing well. Small stress may exist, but you're in control. ☕📘" << std::endl;
-        return menu(s ,b);
+
     }
     else if (s.stress_score <= 30) {
         std::cout << background_main << purple << cool << "You're feeling some pressure. Remember to take breaks and rest. ⚖️" << std::endl;
-        return menu(s ,b);
+
     }
     else if (s.stress_score <= 40) {
         std::cout << background_main << purple << cool << "You're stressed more than usual. It might help to talk or slow down. 😣" << std::endl;
-        return menu(s ,b);
+
     }
     else if (s.stress_score < 50) {
         std::cout << background_main << purple << cool << "High stress levels detected! Don’t forget to prioritize yourself. 🚨" << std::endl;
-        return menu(s ,b);
+
     }
     else if (s.stress_score == 50) {
         std::cout << background_main << purple << cool << "You're under extreme stress. Please take care of your mental health. 🧠💔" << std::endl;
-        return menu(s ,b);
+
     }
 }
