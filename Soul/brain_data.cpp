@@ -1,6 +1,5 @@
 #include "brain_data.hpp"
 #include <iostream>
-#include "terminal.hpp"
 #include <chrono>
 #include <thread>
 
