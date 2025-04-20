@@ -46,6 +46,12 @@ Designed with OOP principles, dynamic scoring logic, and a colorful CLI interfac
 🔍 Readable, documented functions  
 ⚙️ `.gitignore`, `.gitattributes`, `README.md` all included
 
+## ✍️ Content Credits
+
+- All code and logic are original and written by the developer.
+- However, some of the **test questions** and **string-based content** (like result messages, prompts, etc.) were **assisted by ChatGPT (OpenAI)** during brainstorming and generation.
+- This helped speed up the creative process while keeping the final implementation fully customized and original.
+
 ---
 
 ## 📸 Demo Screenshots
@@ -77,9 +83,5 @@ make
 
 ---
 
-## ✍️ Content Credits
 
-- All code and logic are original and written by the developer.
-- However, some of the **test questions** and **string-based content** (like result messages, prompts, etc.) were **assisted by ChatGPT (OpenAI)** during brainstorming and generation.
-- This helped speed up the creative process while keeping the final implementation fully customized and original.
 
