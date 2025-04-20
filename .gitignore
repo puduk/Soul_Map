@@ -1,0 +1,13 @@
+
+cmake-build-debug/
+
+.idea/
+*.iml
+
+*.o
+*.out
+*.exe
+
+.DS_Store
+
+*.log
