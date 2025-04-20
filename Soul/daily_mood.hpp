@@ -3,7 +3,7 @@
 #include "soul_data.hpp"
 #include "brain_data.hpp"
 
-void daily_mood(SoulData &s , BrainData &b);
+void daily_mood(SoulData &s );
 
 
 #endif

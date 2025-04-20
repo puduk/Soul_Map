@@ -3,7 +3,7 @@
 #include "terminal.hpp"
 #include "menu.hpp"
 
-void daily_mood(SoulData &s , BrainData &b) {
+void daily_mood(SoulData &s ) {
 
     std::cout << background_main << purple << "You need to rate to the important level for you (1-5)" << std::endl;
     answer_printer();
@@ -29,27 +29,27 @@ void daily_mood(SoulData &s , BrainData &b) {
 
     if (s.daily_mood_score <= 10) {
         std::cout << background_main << purple << cool << "You seem to be at a very low point today. It's okay — take it slow and breathe. 🫂" << std::endl;
-        return menu(s,b);
+
     }
     else if (s.daily_mood_score <= 20) {
         std::cout << background_main << purple << cool << "You're a bit tired or unmotivated. Maybe some fresh air or music could help. 🌥️" << std::endl;
-        return menu(s,b);
+
     }
     else if (s.daily_mood_score <= 30) {
         std::cout << background_main << purple << cool << "Your mood is neutral. You're going with the flow — nothing too high or too low. ⚖️" << std::endl;
-        return menu(s,b);
+
     }
     else if (s.daily_mood_score <= 40) {
         std::cout << background_main << purple << cool << "You're feeling pretty good today! You've got a nice vibe going on. 😊" << std::endl;
-        return menu(s,b);
+
     }
     else if (s.daily_mood_score < 50) {
         std::cout << background_main << purple << cool << "Your energy is great today! You're open, excited, and emotionally balanced. ✨" << std::endl;
-        return menu(s,b);
+
     }
     else if (s.daily_mood_score == 50) {
         std::cout << background_main << purple << cool  << "You're in an excellent mood! Radiating peace, energy, and positivity! 🌞💫" << std::endl;
-        return menu(s,b);
+
     }
 
 }
