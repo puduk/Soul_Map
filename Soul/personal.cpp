@@ -3,7 +3,7 @@
 #include "terminal.hpp"
 #include "menu.hpp"
 
-void personal(SoulData &s , BrainData& b){
+void personal(SoulData &s ){
 
     std::cout << background_main << purple << "You need to rate to the important level for you (1-5)" << std::endl;
     answer_printer();
@@ -28,26 +28,26 @@ void personal(SoulData &s , BrainData& b){
 
     if (s.personal_score <= 10) {
         std::cout << background_main << purple << cool << "You're quite introverted and reserved. You enjoy deep thinking and quiet environments." << std::endl;
-        return menu(s,b);
+
     }
     else if (s.personal_score <= 20) {
         std::cout << background_main << purple << cool << "You're thoughtful and a bit cautious. You open up to people slowly but meaningfully." << std::endl;
-        return menu(s,b);
+
     }
     else if (s.personal_score <= 30) {
         std::cout << background_main << purple << cool << "You're balanced — sometimes social, sometimes reflective. You adapt based on your mood." << std::endl;
-        return menu(s,b);
+
     }
     else if (s.personal_score <= 40) {
         std::cout << background_main << purple << cool << "You're outgoing and warm. You love meaningful connections and group activities." << std::endl;
-        return menu(s,b);
+
     }
     else if (s.personal_score < 50) {
         std::cout << background_main << purple << cool << "You're highly expressive and open! You thrive in social spaces and enjoy leading." << std::endl;
-        return menu(s,b);
+
     }
     else if (s.personal_score == 50) {
         std::cout << background_main << purple << cool << "You're a true extrovert! Your energy and confidence inspire everyone around you." << std::endl;
-        return menu(s,b);
+
     }
 }
