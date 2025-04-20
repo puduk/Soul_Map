@@ -1,13 +1,24 @@
-
-cmake-build-debug/
-
 .idea/
+cmake-build-*/
 *.iml
 
 *.o
 *.out
 *.exe
+*.a
+*.so
+*.obj
+*.log
 
 .DS_Store
+Thumbs.db
 
-*.log
+*~
+*.swp
+*.swo
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
