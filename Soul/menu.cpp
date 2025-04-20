@@ -13,17 +13,28 @@
 #include "iq.hpp"
 #include "english.hpp"
 #include "math.hpp"
+#include "age.hpp"
+#include "animal.hpp"
+#include "continent.hpp"
+#include "game.hpp"
+#include "job.hpp"
+#include "movie.hpp"
+#include "planet.hpp"
+#include "singer.hpp"
 
 
 
 
 
-void menu(SoulData& s , BrainData& b){
+
+void menu(SoulData& s , BrainData& b , FeelingData& f){
 
 
 
 
-  std::cout << reset_color << background_line << bold << "_____________________________________________" <<std::endl;
+  while (true) {
+
+  std::cout << background_line << bold << "_____________________________________________" <<std::endl;
   std::cout << background_main << bold << purple << "    Welcome to the Soul Map    "  <<  std::endl;
   std::cout << background_main << bold << cool <<   "  1 :: Love Test." <<  std::endl;
   std::cout << background_main << bold << cool <<   "  2 :: Personalty Test"  <<  std::endl;
@@ -44,79 +55,101 @@ void menu(SoulData& s , BrainData& b){
   std::cout << background_main << bold << cool <<   " 13 :: Which Planet Are you? "  <<  std::endl;
   std::cout << background_main << bold << cool <<   " 14 :: Which Movie Character Are you? "  <<  std::endl;
   std::cout << background_main << bold << cool <<   " 15 :: We Will Guess Your Age in 5 Question"  <<  std::endl;
-  std::cout << background_main << bold << cool <<   " 16 :: We Will Guess Your Country in 5 Question"  <<  std::endl;
+  std::cout << background_main << bold << cool <<   " 16 :: We Will Guess Your Continent in 5 Question"  <<  std::endl;
   std::cout << background_main << bold << cool <<   " 17 :: We Will Guess Your Job in 5 Question"  <<  std::endl;
+  std::cout << background_main << bold << cool <<   " 18 :: Which Singer Are you? " << std::endl;
+  std::cout << background_main << bold << cool <<   "  0 :: For Quiting." << std::endl;
   int choice;
   std::cin >> choice;
 
   switch (choice) {
     case 1:
       start_test();
-      love(s,b);
+      love(s);
       break;
     case 2:
       start_test();
-      personal(s,b);
-      break;
+      personal(s);
+    break;
     case 3:
       start_test();
-      daily_mood(s,b);
+      daily_mood(s);
       break;
     case 4:
       start_test();
-      stress(s,b);
+      stress(s);
       break;
     case 5:
       start_test();
-      mood_color(s,b);
+      mood_color(s);
       break;
     case 6:
       start_test();
-      iq(b,s);
-      break;
+      iq(b);
+    break;
     case 7:
       start_test();
-      english(b,s);
-      break;
+      english(b);
+    break;
     case 8:
-      math(b,s);
       start_test();
-      break;
+      math(b);
+
+    break;
     case 9:
-      general(b,s);
       start_test();
-      break;
+      general(b);
+
+    break;
     case 10:
-      geography(b,s);
       start_test();
-      break;
+      geography(b);
 
-
-
+    break;
     case 11:
       start_test();
-      break;
+      animal(f);
+    break;
     case 12:
       start_test();
-      break;
+      game(f);
+    break;
     case 13:
       start_test();
-      break;
+      planet(f);
+
+    break;
     case 14:
       start_test();
-      break;
+      movie(f);
+    break;
     case 15:
       start_test();
-      break;
+      age(f);
+    break;
     case 16:
       start_test();
-      break;
+      continent(f);
+    break;
     case 17:
       start_test();
+      job(f);
       break;
+    case 18:
+      start_test();
+      singer(f);
+    break;
+    case 0:
+      std::cout << background_main << red << cool << "Quiting!" <<  std::endl;
+      exit(0);
     default:
-      break;
+      std::cout << background_main << red << cool << "Invalid Choice!" <<  std::endl;
   }
+
+
+
+  }
+
 
 
 
