@@ -4,6 +4,7 @@
 #include <thread>
 #include "Soul/terminal.hpp"
 #include "Soul/brain_data.hpp"
+#include "Soul/feeling_data.hpp"
 
 void opening(){
 
@@ -23,9 +24,10 @@ int main() {
     opening();
 
 
+    FeelingData f;
     BrainData b;
     SoulData s;
-    menu(s,b);
+    menu(s,b,f);
 
 
 
