@@ -19,6 +19,7 @@ Designed with OOP principles, dynamic scoring logic, and a colorful CLI interfac
 🎨 Terminal colors for categories  
 💬 Custom result messages with emojis  
 🔁 Animated countdown before tests
+🔁 Animated opening countdown 
 
 ---
 
