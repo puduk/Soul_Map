@@ -4,7 +4,7 @@
 #include "menu.hpp"
 #include "soul_data.hpp"
 
-void math(BrainData& b , SoulData& s);
+void math(BrainData& b );
 
 
 #endif
